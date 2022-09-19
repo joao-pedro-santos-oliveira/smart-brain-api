@@ -21,7 +21,7 @@ const db = knex({
 app.use(express.json())
 app.use(cors())
 
-app.get('/', (req, res) => { res.send('ta funcionando!')})
+app.get('/', (req, res) => { res.send('its working!')})
 
 app.post('/signin',signin.handleSignin(db, bcrypt))
 
